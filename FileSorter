@@ -1,0 +1,14 @@
+import os
+
+os.getcwd()
+# os.mkdir
+in_path = "/Users/aryanbarik/Documents/GitHub/File Sorter/sample pictureset"
+# change to allow custom path
+out_path = "/Users/aryanbarik/Documents/GitHub/File Sorter/sample pictureset"
+
+def date_grabber(): #pass file as parameter here
+    # get date of function
+    date = "YEAR-MONTH-DATE"
+
+def sorter():
+    os.chdir(out_path)

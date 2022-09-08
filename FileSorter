@@ -11,4 +11,5 @@ def date_grabber(): #pass file as parameter here
     date = "YEAR-MONTH-DATE"
 
 def sorter():
+    # sorts images by date
     os.chdir(out_path)

@@ -3,12 +3,21 @@ import os
 os.getcwd()
 # os.mkdir
 in_path = "/Users/aryanbarik/Documents/GitHub/File Sorter/sample pictureset"
-# change to allow custom path
-out_path = "/Users/aryanbarik/Documents/GitHub/File Sorter/sample pictureset"
+# change to allow custom paths
+out_path = "/Users/aryanbarik/Documents/GitHub/File Sorter/output"
 
 def date_grabber(): #pass file as parameter here
     # get date of function
     date = "YEAR-MONTH-DATE"
+
+    # get Linux epoch time in seconds
+    c_time = os.path.getctime(filename)
+
+    # convert to local time and create struct_time
+    local_time = time.localtime(c_time)
+
+    #
+
 
 def sorter():
     # sorts images by date

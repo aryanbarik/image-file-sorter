@@ -11,7 +11,8 @@ import file_sorter as fs
 os.getcwd
 
 # with open("img1.jpg", "b") as img:
-  
+
+fs.test_print()
 size = os.path.getsize("/home/runner/Image-File-Sorter/sample pictureset/img1.jpeg")
 
 

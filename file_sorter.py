@@ -4,6 +4,8 @@ import fileinput
 
 # def file_access():
 
+def test_print():
+    print("file_sorter.py main ran and printed")
 
 def get_date(filename):  # pass file as parameter here
     # get date of file
@@ -31,7 +33,6 @@ def sorter():
 def main():
     get_date("img1")
     print("file_sorter.py main")
-
 
 # only runs if file_sorter.py is run and not main.py
 if __name__ == '__main__':

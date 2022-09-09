@@ -1,6 +1,9 @@
 import os
 import fileinput
 
+# def file_access():
+    
+
 def get_date(filename): # pass file as parameter here
     # get date of file
 
@@ -10,7 +13,6 @@ def get_date(filename): # pass file as parameter here
     # convert to local time and create struct_time
     local_time = time.localtime(c_time)
 
-    
     return local_time
 
 def date_associator(local_time, filename):
@@ -23,7 +25,7 @@ def sorter():
     os.mkdir("$PATH/")
 
 def main():
-    get_date("/Users/aryanbarik/Documents/GitHub/File Sorter/sample pictureset")
+    get_date("img1")
 
 # only runs if file_sorter.py is run and not main.py
 if __name__ == '__main__':

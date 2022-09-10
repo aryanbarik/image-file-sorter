@@ -7,11 +7,11 @@ import fileinput
 def test_print():
     print("file_sorter.py main ran and printed")
 
-def get_date(filename):  # pass file as parameter here
+def get_date(filepath):  # pass file as parameter here
     # get date of file
 
     # get Linux epoch time in seconds
-    c_time = os.path.getctime(filename)
+    c_time = os.path.getctime(filepath)
 
     # convert to local time and create struct_time
     local_time = time.localtime(c_time)
@@ -31,8 +31,18 @@ def sorter():
 
 
 def main():
-    get_date("img1")
-    print("file_sorter.py main")
+    current_directory = os.getcwd()
+   
+    # print(os.getcwd())
+    
+    current_directory = (current_directory + "{}").format("/sample pictureset")
+    os.chdir(current_directory)
+    
+    current_file = (current_directory + "{}").format("/img1.jpeg")
+    date =  get_date(current_file)
+    # print(img1_date)
+
+    print(date)
 
 # only runs if file_sorter.py is run and not main.py
 if __name__ == '__main__':
